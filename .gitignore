@@ -2,3 +2,4 @@ figma
 node_modules
 no_deploy
 dist
+.DS_Store
