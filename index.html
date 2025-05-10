@@ -1,33 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | NFT preview card component</title>
+    <meta name="author" content="Barrie Freyre" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <meta name="linkedin" content="https://www.linkedin.com/in/barriefreyre/" />
+    <meta name="github" content="https://github.com/barriedirk" />
+    <meta
+      name="frontendmentor"
+      content="https://www.frontendmentor.io/profile/barriedirk"
+    />
 
-  Equilibrium #3429
+    <link rel="me" href="https://www.linkedin.com/in/barriefreyre/" />
+    <link rel="me" href="https://github.com/barriedirk" />
+    <link rel="me" href="https://www.frontendmentor.io/profile/barriedirk" />
 
-  Our Equilibrium collection promotes balance and calm.
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Barrie Freyre",
+        "url": "",
+        "sameAs": [
+          "https://www.linkedin.com/in/barriefreyre/",
+          "https://github.com/barriedirk",
+          "https://www.frontendmentor.io/profile/barriedirk"
+        ]
+      }
+    </script>
 
-  0.041 ETH
-  3 days left
-  
-  Creation of Jules Wyvern
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <title>Frontend Mentor | NFT preview card component</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <style>
+      .attribution {
+        font-size: 1rem;
+        text-align: center;
+      }
+      .attribution a {
+        color: var(--clr-blue-500);
+      }
+    </style>
+  </head>
+  <body class="flex-column">
+    <main>
+      <article
+        class="card flex-column"
+        aria-labelledby="card__title"
+        aria-describedby="card__description"
+      >
+        <div class="card__image-wrapper">
+          <img
+            src="./images/image-equilibrium.jpg"
+            class="card__image"
+            alt="Equilibrium NFT"
+          />
+          <div
+            class="card__overlay"
+            role="presentation"
+            aria-hidden="true"
+          ></div>
+        </div>
+        <div class="card__body flex-column">
+          <h1 id="card__title" class="card__title">Equilibrium #3429</h1>
+          <p id="card__description" class="card__description">
+            Our Equilibrium collection promotes balance and calm.
+          </p>
+
+          <div class="card__metadata flex-row">
+            <span class="card__price flex-row">
+              <img src="./images/icon-ethereum.svg" alt="" aria-hidden="true" />
+              0.041 ETH</span
+            >
+            <span class="card__time flex-row">
+              <img src="./images/icon-clock.svg" alt="" aria-hidden="true" />
+              3 days left</span
+            >
+          </div>
+          <footer class="card__creator flex-row">
+            <img
+              class="avatar"
+              src="./images/image-avatar.png"
+              alt="Avatar of Jules Wyvern"
+            />
+            <span>Creation of <strong>Jules Wyvern</strong></span>
+          </footer>
+        </div>
+      </article>
+    </main>
+
+    <footer class="attribution">
+      Challenge by
+      <a
+        href="https://www.frontendmentor.io/profile/barriedirk/solutions"
+        target="_blank"
+        aria-label="View my Frontend Mentor solutions"
+        >Frontend Mentor</a
+      >. Coded by
+      <a
+        href="https://www.linkedin.com/in/barriefreyre/"
+        target="_blank"
+        aria-label="Visit Barrie Freyre on LinkedIn"
+        >Barrie Freyre</a
+      >.
+    </footer>
+  </body>
 </html>
